@@ -1,0 +1,12 @@
+.App {
+  background-color: rgb(9, 45, 66);
+  height: 100vh;
+  nav {
+    text-align: center;
+    padding: 3rem;
+    & > a {
+      padding: 2rem;
+    }
+  }
+  
+}

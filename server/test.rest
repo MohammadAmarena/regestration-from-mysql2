@@ -1,0 +1,27 @@
+@url = http://localhost:3111
+
+### registration
+POST {{url}}/register
+Content-Type: application/json
+
+{
+  "name": "Mohammad",
+  "email": "m@m.com",
+  "password": "123"
+}
+
+### Signin
+POST {{url}}/signin
+Content-Type: application/json
+
+{
+  "email": "m@m.com",
+  "password": "123"
+}
+
+### Get Current User
+GET {{url}}/me
+Cookie: token=token
+
+### Logout
+GET {{url}}/logout
